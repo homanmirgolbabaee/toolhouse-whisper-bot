@@ -49,7 +49,6 @@ export function ChatInput() {
           placeholder="Ask a question or use available tools..."
           disabled={loading}
           className="min-h-[60px] resize-none pr-14"
-          maxRows={5}
         />
         <Button 
           size="icon"
