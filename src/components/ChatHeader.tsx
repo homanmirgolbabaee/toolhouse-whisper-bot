@@ -25,7 +25,7 @@ export function ChatHeader() {
           </SheetContent>
         </Sheet>
         <h1 className="text-xl font-semibold">
-          {currentSession?.name || "Whisper Bot"}
+          {currentSession?.name || "Content Creator Assistant"}
         </h1>
         {!isConfigured && (
           <span className="bg-amber-100 text-amber-800 text-xs px-2 py-1 rounded-full">
@@ -35,7 +35,7 @@ export function ChatHeader() {
       </div>
       <div className="flex items-center gap-2">
         <Button 
-          variant="outline" 
+          variant="default" 
           size="sm" 
           onClick={createNewSession}
           className="flex items-center gap-1"

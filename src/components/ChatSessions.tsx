@@ -24,6 +24,7 @@ export function ChatSessions({ onSelectSession }: ChatSessionsProps) {
         <Button 
           onClick={createNewSession} 
           className="w-full flex gap-2 justify-center"
+          variant="default"
         >
           <MessageSquare className="h-4 w-4" />
           New Chat

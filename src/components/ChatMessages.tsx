@@ -21,10 +21,10 @@ export function ChatMessages() {
               <MessageItem className="h-8 w-8 text-primary" />
             </div>
           </div>
-          <h3 className="text-xl font-semibold">Whisper Bot</h3>
+          <h3 className="text-xl font-semibold">Content Creator Assistant</h3>
           <p className="text-muted-foreground max-w-sm mt-2">
-            Ask anything or use Toolhouse's powerful tools to help you analyze websites, 
-            search the web, process data, and more!
+            Create engaging blog posts and content for developer relations. Use the tools above or ask 
+            questions directly to help with your content creation needs.
           </p>
         </div>
       ) : (

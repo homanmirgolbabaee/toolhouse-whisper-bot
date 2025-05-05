@@ -46,7 +46,7 @@ export function ChatInput() {
           value={input}
           onChange={(e) => setInput(e.target.value)}
           onKeyDown={handleKeyDown}
-          placeholder="Ask a question or use available tools..."
+          placeholder="Ask a question or provide content instructions..."
           disabled={loading}
           className="min-h-[60px] resize-none pr-14"
         />
