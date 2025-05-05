@@ -41,12 +41,12 @@ export function MessageItem({ message, className }: MessageItemProps) {
         <div className="markdown prose-sm max-w-none">
           <ReactMarkdown
             components={{
-              code({ node, inline, className, children, ...props }) {
+              code({ className, children, ...props }) {
                 const match = /language-(\w+)/.exec(className || "");
-                return !inline && match ? (
+                return !props.node?.position ? (
                   <SyntaxHighlighter
                     style={dracula}
-                    language={match[1]}
+                    language={match?.[1] || ""}
                     PreTag="div"
                     {...props}
                   >
